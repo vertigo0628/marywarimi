@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mary Warimi — Data Science Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#FAFAF7;
+    --ink:#1C2321;
+    --ink-soft:#4A524F;
+    --teal:#2E6F6E;
+    --teal-deep:#1D4B4A;
+    --amber:#C98A3E;
+    --line:#DEDBD2;
+    --card:#FFFFFF;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:"IBM Plex Sans", sans-serif;
+    line-height:1.6;
+  }
+  h1,h2,h3{
+    font-family:"Newsreader", serif;
+    font-weight:500;
+    margin:0 0 0.4em 0;
+    color:var(--ink);
+  }
+  a{color:var(--teal-deep);}
+  .wrap{
+    max-width:760px;
+    margin:0 auto;
+    padding:0 24px;
+  }
+  /* Hero */
+  header.hero{
+    padding:88px 0 56px 0;
+    border-bottom:1px solid var(--line);
+  }
+  header.hero .kicker{
+    font-family:"IBM Plex Mono", monospace;
+    font-size:0.82rem;
+    color:var(--teal);
+    margin-bottom:14px;
+  }
+  header.hero h1{
+    font-size:2.6rem;
+    line-height:1.15;
+    max-width:14ch;
+  }
+  header.hero p.lede{
+    font-size:1.08rem;
+    color:var(--ink-soft);
+    max-width:52ch;
+    margin-top:18px;
+  }
+  header.hero .links{
+    margin-top:28px;
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+  }
+  header.hero .links a{
+    text-decoration:none;
+    border-bottom:1px solid var(--teal-deep);
+    padding-bottom:2px;
+    font-size:0.95rem;
+  }
+  header.hero .links a:hover{
+    color:var(--amber);
+    border-color:var(--amber);
+  }
+
+  section{
+    padding:56px 0;
+    border-bottom:1px solid var(--line);
+  }
+  section:last-of-type{border-bottom:none;}
+  section h2{
+    font-size:1.5rem;
+    margin-bottom:22px;
+  }
+
+  /* About */
+  #about p{max-width:62ch; color:var(--ink-soft);}
+
+  /* Projects */
+  .project{
+    background:var(--card);
+    border:1px solid var(--line);
+    border-radius:6px;
+    padding:24px 26px;
+    margin-bottom:18px;
+  }
+  .project:last-child{margin-bottom:0;}
+  .project h3{
+    font-size:1.15rem;
+    margin-bottom:6px;
+  }
+  .project .status{
+    font-family:"IBM Plex Mono", monospace;
+    font-size:0.72rem;
+    color:var(--teal-deep);
+    background:#EAF2F1;
+    padding:3px 8px;
+    border-radius:4px;
+    display:inline-block;
+    margin-bottom:10px;
+  }
+  .project p{
+    color:var(--ink-soft);
+    margin:0 0 14px 0;
+    font-size:0.97rem;
+  }
+  .project .meta{
+    display:flex;
+    gap:16px;
+    flex-wrap:wrap;
+    font-size:0.88rem;
+  }
+  .project .meta a{text-decoration:none;}
+  .project .meta a:hover{color:var(--amber);}
+
+  /* Skills */
+  .skills-list{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+    padding:0;
+    margin:0;
+    list-style:none;
+  }
+  .skills-list li{
+    font-family:"IBM Plex Mono", monospace;
+    font-size:0.85rem;
+    border:1px solid var(--line);
+    border-radius:4px;
+    padding:6px 12px;
+    color:var(--ink-soft);
+  }
+
+  footer{
+    padding:40px 0 60px 0;
+    color:var(--ink-soft);
+    font-size:0.9rem;
+  }
+  footer a{text-decoration:none;}
+  footer a:hover{color:var(--amber);}
+
+  @media (max-width:600px){
+    header.hero{padding:56px 0 40px 0;}
+    header.hero h1{font-size:2rem;}
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    html{scroll-behavior:auto;}
+  }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <header class="hero">
+    <div class="kicker">DATA SCIENCE / MERU UNIVERSITY OF SCIENCE AND TECHNOLOGY</div>
+    <h1>Mary Warimi</h1>
+    <p class="lede">First-year data science student building real, end-to-end machine learning projects — from raw data to deployed apps — through the WiDS Kenya AI Mentorship Programme.</p>
+    <div class="links">
+      <a href="https://github.com/marywarimi" target="_blank" rel="noopener">GitHub</a>
+      <a href="mailto:warimi124268@students.must.ac.ke">Email</a>
+      <a href="#projects">Projects</a>
+    </div>
+  </header>
+
+  <section id="about">
+    <h2>About</h2>
+    <p>I started my data science journey in May 2026, coming from a background in C and C++. Since then I've worked through full machine learning pipelines — cleaning data, engineering features, comparing models, and deploying results — using Python, pandas, and scikit-learn. I'm currently building toward an internship-ready portfolio, one project at a time.</p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+
+    <div class="project">
+      <h3>E-commerce Customer Churn Prediction</h3>
+      <span class="status">Complete &amp; deployed</span>
+      <p>A full pipeline on a 5,630-row e-commerce dataset with 27 behavioral features. Compared five models before selecting a tuned Random Forest, reaching 97.5% accuracy and a 0.990 ROC-AUC. Deployed as a live Streamlit app that takes customer details and predicts churn risk.</p>
+      <div class="meta">
+        <a href="https://github.com/marywarimi/ecommerce-churn-prediction" target="_blank" rel="noopener">Code →</a>
+        <a href="https://ecommerce-churn-prediction-ykbzfpyktkvu9ilvggzb2u.streamlit.app" target="_blank" rel="noopener">Live app →</a>
+      </div>
+    </div>
+
+    <div class="project">
+      <h3>Customer Lifetime Value</h3>
+      <span class="status">In progress</span>
+      <p>Building CLV from scratch using raw UK e-commerce transactions rather than a pre-labeled dataset — computing RFM (Recency, Frequency, Monetary) features myself, then modeling on top of them. Planned to ship as both an API and a Streamlit front end.</p>
+      <div class="meta">
+        <a href="https://github.com/marywarimi" target="_blank" rel="noopener">GitHub →</a>
+      </div>
+    </div>
+
+    <div class="project">
+      <h3>Titanic: Data Cleaning &amp; Visualization</h3>
+      <span class="status">Modeling stage next</span>
+      <p>Full data-cleaning and exploratory analysis project: handling missing values, engineering features like FamilySize and AgeBand, and visualizing survival patterns with matplotlib and seaborn.</p>
+      <div class="meta">
+        <a href="https://github.com/marywarimi/titanic-data-cleaning-and-visualization" target="_blank" rel="noopener">Code →</a>
+      </div>
+    </div>
+
+    <div class="project">
+      <h3>Afya ya Akili</h3>
+      <span class="status">WiDS Kenya original project</span>
+      <p>A Gemini-powered wellness check-in assistant for Kenyan university students, designed for private, culturally grounded stress processing with escalation to real support resources when needed.</p>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Tools &amp; Skills</h2>
+    <ul class="skills-list">
+      <li>Python</li>
+      <li>pandas</li>
+      <li>scikit-learn</li>
+      <li>Streamlit</li>
+      <li>Git &amp; GitHub</li>
+      <li>matplotlib / seaborn</li>
+      <li>C / C++</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>© 2026 Mary Warimi · <a href="https://github.com/marywarimi" target="_blank" rel="noopener">github.com/marywarimi</a></p>
+  </footer>
+</div>
+
+</body>
+</html>
